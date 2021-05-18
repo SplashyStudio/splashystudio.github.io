@@ -8,11 +8,23 @@
 <meta property="og:type"content="website">
 <meta property="og:site_name"content="M-BYTES">
 <meta property="og:title"content="M-BYTES Downloads">
-<meta property="og:description"content="Specifically soon going to be a website for a 2nd way of download M-BYTES products/versions.">
-<script src="playSound.js"></script>
+<meta property="og:description"content="Specifically soon going to be a website for a 2nd way of downloading M-BYTES products/versions.">
 </head>
 <body>
-<div onclick="location.reload()"title="Little problem here"style="text-align:center;"><img src="image.png"height="125"width="125"class="notDoneYet"><audio src="notDone.mp3"id="notDone"></audio></div>
-<p style="text-align:center;font-family:Arial;font-weight:bold;">This website is down (just for right now).<br>You do you while you wait.</p>
+    <div onclick="location.reload()"title="Little problem here"style="text-align:center;"><img src="image.png"height="125"width="125"></div>
+    <p style="text-align:center;font-family:Arial;font-weight:bold;">This website is down (just for right now).<br>You do you while you wait.</p>
+    <p style="font-family:Arial;color:lightgray;font-size:10px;text-align:center;">R or L to reload</p>
+    <script>
+    alert('This website is down right now.')
+        window.addEventListener('keydown',(event)=>{
+            if(event.key='r'){
+                alert('This website is down right now.')
+                location.reload()
+            }else if(event.key='l'){
+                alert('This website is down right now.')
+                location.reload()
+            }
+        })
+    </script>
 </body>
 </html>
