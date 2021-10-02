@@ -5,7 +5,6 @@
  #ssHeader {
   background: linear-gradient(#0044cc, #003399);
  }
- #versionsLabel:hover {text-decoration:underline;}
  a{text-decoration:none}
 </style>
 <script>
@@ -18,24 +17,12 @@
  function goToWiki() {
   document.getElementById("wikiLinkText").click();
  }
- function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("mySidebar").style.width = "100%";
- }
- function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
- }
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="icon" href="https://github.com/MWB6763/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
-<title>Home | Splashy Studio | MWB6763</title>
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
- <h1 class="w3-xxxlarge w3-text-theme">Navigation</h1>
- <button class="w3-bar-item w3-button" onclick="w3_close()" title="Close navigation"><b>Close</b> <i class="fa fa-remove"></i></button>
- <a title="Versions page" href="versions.html" id="versionsLabel"><b>Versions</b></a>
-</nav>
+<title>Splashy Studio | MWB6763</title>
 <header class="w3-container w3-padding" id="ssHeader">
  <div class="w3-center">
    <img src="https://github.com/MWB6763/Splashy-Studio-1/blob/main/ssIcon.png?raw=true" width="120" height="120" style="cursor:pointer" onclick="location.reload()" title="Icon">
@@ -45,7 +32,6 @@
  </div>
 </header><br>
 <div class="w3-center" style="color:#99eeff">
- <i class="fa fa-bars w3-xlarge w3-button w3-theme" onclick="w3_open()"></i><br><br>
  <b>Splashy Studio</b> is an art program that lets you use <i>pen painting</i> <b>and</b> <i>image editing</i>.
 </div>
 <div class="w3-row-padding w3-center w3-margin-top">
