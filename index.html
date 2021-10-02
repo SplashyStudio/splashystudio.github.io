@@ -1,30 +1,64 @@
-<html>
-<head>
-<title>Website isn't ready yet</title>
-<link rel="icon"href="icon.png">
-<meta property="og:url"content="mwb6763.github.io">
-<link rel="canonical"content="mwb6763.github.io">
-<link hreflang="en"href="mwb6763.github.io"rel="alternate">
-<meta property="og:type"content="website">
-<meta property="og:site_name"content="M-BYTES">
-<meta property="og:title"content="M-BYTES Downloads">
-<meta property="og:description"content="Specifically soon going to be a website for a 2nd way of downloading M-BYTES products/versions.">
-</head>
-<body>
-    <div onclick="location.reload()"title="Little problem here"style="text-align:center;"><img src="image.png"height="125"width="125"></div>
-    <p style="text-align:center;font-family:Arial;font-weight:bold;">This website is down (just for right now).<br>You do you while you wait.</p>
-    <p style="font-family:Arial;color:lightgray;font-size:10px;text-align:center;">Press any key you want to reload/mess around</p>
-    <script>
-    alert('This website is down right now.')
-        window.addEventListener('keydown',(event)=>{
-            if(event.key='r'){
-                alert('This website is down right now.')
-                location.reload()
-            }else if(event.key='l'){
-                alert('This website is down right now.')
-                location.reload()
-            }
-        })
-    </script>
-</body>
-</html>
+<style>
+ body {
+  background: #0073e6;
+  color: white;
+ }
+ #ssHeader {
+  background: linear-gradient(#0044cc, #003399);
+ }
+</style>
+<script>
+ function goToRepository() {
+  document.getElementById("repositoryLinkText").click();
+ }
+ function goToPlaylist() {
+  document.getElementById("playlistLinkText").click();
+ }
+ function goToWiki() {
+  document.getElementById("wikiLinkText").click();
+ }
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="icon" href="https://github.com/MWB6763/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<title>Splashy Studio | MWB6763</title>
+<header class="w3-container w3-padding" id="ssHeader">
+ <div class="w3-center">
+   <img src="https://github.com/MWB6763/Splashy-Studio-1/blob/main/ssIcon.png?raw=true" width="120" height="120" style="cursor:pointer" onclick="location.reload()" title="Icon">
+   <h1 class="w3-xxxlarge" style="color:aqua">Splashy Studio</h1>
+   <h2 class="w3-xlarge" style="color:aqua">Website</h2>
+   <h3 style="color:aqua">Developed by <b>MWB6763</b></h3>
+ </div>
+</header><br>
+<div class="w3-center" style="color:#99eeff">
+ <b>Splashy Studio</b> is an art program that lets you use <i>pen painting</i> <b>and</b> <i>image editing</i>
+</div>
+<div class="w3-row-padding w3-center w3-margin-top">
+ <div class="w3-third">
+   <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
+    <h3>GitHub Source Code</h3><br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/768px-Github-desktop-logo-symbol.svg.png" width="100" height="100" onclick="goToRepository()" style="cursor:pointer"><br><br>
+    <button class="w3-button w3-theme w3-xlarge" title="Go to repository" onclick="goToRepository()" style="border-radius:5px"><a href="https://github.com/MWB6763/mwb6763.github.io" style="text-decoration:none" id="repositoryLinkText">Look At Code</a></button>
+   </div>
+ </div>
+ <div class="w3-third">
+  <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
+    <h3>YouTube Playlist</h3><br>
+    <img src="https://qonaskamkuk.com/wp-content/uploads/2019/08/youtube-logo.png" width="100" height="100" onclick="goToPlaylist()" style="cursor:pointer"><br><br>
+   <button class="w3-button w3-theme w3-xlarge" title="Go to playlist" onclick="goToPlaylist()" style="border-radius:5px"><a href="https://www.youtube.com/playlist?list=PLSRLBCuGGPd5tm0VOdhQkVcTt6I00O6h7" style="text-decoration:none" id="playlistLinkText">Look At Playlist</a></button>
+  </div>
+ </div>
+ <div class="w3-third">
+  <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
+    <h3>Fandom Wiki</h3><br>
+    <img src="https://www.fandom.com/f2/assets/favicons/favicon-32x32.png?v=d0f94faf968eb50211ab8908820aeefb1db29c54" width="100" height="100" onclick="goToWiki()" style="cursor:pointer"><br><br>
+   <button class="w3-button w3-theme w3-xlarge" title="Go to wiki" onclick="goToWiki()" style="border-radius:5px"><a href="https://splashy-studio.fandom.com/wiki/Splashy_Studio_Wiki" style="text-decoration:none" id="wikiLinkText">Look At Wiki</a></button>
+  </div>
+ </div>
+</div>
+<footer class="w3-container w3-theme-dark w3-padding-16 w3-margin-top">
+  <div class="w3-center">
+   Sponsored by and created using <a href="https://www.w3schools.com" style="text-decoration:none" title="Go to W3schools"><b>w3.css!</b></a>
+ </div>
+</footer>
