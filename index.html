@@ -1,11 +1,12 @@
 <style>
  body {
   background: #0073e6;
-  color: white;
  }
  #ssHeader {
   background: linear-gradient(#0044cc, #003399);
  }
+ #versionsLabel:hover {text-decoration:underline;}
+ a{text-decoration:none}
 </style>
 <script>
  function goToRepository() {
@@ -17,12 +18,24 @@
  function goToWiki() {
   document.getElementById("wikiLinkText").click();
  }
+ function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("mySidebar").style.width = "100%";
+ }
+ function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+ }
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="icon" href="https://github.com/MWB6763/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
-<title>Splashy Studio | MWB6763</title>
+<title>Home | Splashy Studio | MWB6763</title>
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+ <h1 class="w3-xxxlarge w3-text-theme">Navigation</h1>
+ <button class="w3-bar-item w3-button" onclick="w3_close()" title="Close navigation"><b>Close</b> <i class="fa fa-remove"></i></button>
+ <a title="Versions page" href="versions.html" id="versionsLabel"><b>Versions</b></a>
+</nav>
 <header class="w3-container w3-padding" id="ssHeader">
  <div class="w3-center">
    <img src="https://github.com/MWB6763/Splashy-Studio-1/blob/main/ssIcon.png?raw=true" width="120" height="120" style="cursor:pointer" onclick="location.reload()" title="Icon">
@@ -32,33 +45,34 @@
  </div>
 </header><br>
 <div class="w3-center" style="color:#99eeff">
+ <i class="fa fa-bars w3-xlarge w3-button w3-theme" onclick="w3_open()"></i><br><br>
  <b>Splashy Studio</b> is an art program that lets you use <i>pen painting</i> <b>and</b> <i>image editing</i>.
 </div>
 <div class="w3-row-padding w3-center w3-margin-top">
  <div class="w3-third">
    <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
-    <h3>GitHub Source Code</h3><br>
+    <h3 style="color:white">GitHub Source Code</h3><br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/768px-Github-desktop-logo-symbol.svg.png" width="100" height="100" onclick="goToRepository()" style="cursor:pointer"><br><br>
-    <button class="w3-button w3-theme w3-xlarge" title="Go to repository" onclick="goToRepository()" style="border-radius:5px"><a href="https://github.com/MWB6763/mwb6763.github.io" style="text-decoration:none" id="repositoryLinkText">Look At Code</a></button>
+    <button class="w3-button w3-theme w3-xlarge" title="Go to repository" onclick="goToRepository()" style="border-radius:5px"><a href="https://github.com/MWB6763/mwb6763.github.io" id="repositoryLinkText">Look At Code</a></button>
    </div>
  </div>
  <div class="w3-third">
   <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
-    <h3>YouTube Playlist</h3><br>
+    <h3 style="color:white">YouTube Playlist</h3><br>
     <img src="https://qonaskamkuk.com/wp-content/uploads/2019/08/youtube-logo.png" width="100" height="100" onclick="goToPlaylist()" style="cursor:pointer"><br><br>
-   <button class="w3-button w3-theme w3-xlarge" title="Go to playlist" onclick="goToPlaylist()" style="border-radius:5px"><a href="https://www.youtube.com/playlist?list=PLSRLBCuGGPd5tm0VOdhQkVcTt6I00O6h7" style="text-decoration:none" id="playlistLinkText">Look At Playlist</a></button>
+   <button class="w3-button w3-theme w3-xlarge" title="Go to playlist" onclick="goToPlaylist()" style="border-radius:5px"><a href="https://www.youtube.com/playlist?list=PLSRLBCuGGPd5tm0VOdhQkVcTt6I00O6h7" id="playlistLinkText">Look At Playlist</a></button>
   </div>
  </div>
  <div class="w3-third">
   <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
-    <h3>Fandom Wiki</h3><br>
+    <h3 style="color:white">Fandom Wiki</h3><br>
     <img src="https://www.fandom.com/f2/assets/favicons/favicon-32x32.png?v=d0f94faf968eb50211ab8908820aeefb1db29c54" width="100" height="100" onclick="goToWiki()" style="cursor:pointer"><br><br>
-   <button class="w3-button w3-theme w3-xlarge" title="Go to wiki" onclick="goToWiki()" style="border-radius:5px"><a href="https://splashy-studio.fandom.com/wiki/Splashy_Studio_Wiki" style="text-decoration:none" id="wikiLinkText">Look At Wiki</a></button>
+   <button class="w3-button w3-theme w3-xlarge" title="Go to wiki" onclick="goToWiki()" style="border-radius:5px"><a href="https://splashy-studio.fandom.com/wiki/Splashy_Studio_Wiki" id="wikiLinkText">Look At Wiki</a></button>
   </div>
  </div>
 </div>
 <footer class="w3-container w3-theme-dark w3-padding-16 w3-margin-top">
   <div class="w3-center">
-   Sponsored by and created using <a href="https://www.w3schools.com" style="text-decoration:none" title="Go to W3schools"><b>w3.css!</b></a>
+   Sponsored by and created using <a href="https://www.w3schools.com" title="Go to W3schools"><b>w3.css!</b></a>
  </div>
 </footer>
