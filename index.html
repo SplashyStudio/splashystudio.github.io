@@ -17,6 +17,12 @@
  function goToWiki() {
   document.getElementById("wikiLinkText").click();
  }
+ function get1_5() {
+  document.getElementById("download1").click();
+ }
+ function get2_1() {
+  document.getElementById("download2").click();
+ }
 </script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
@@ -52,12 +58,28 @@
  </div>
  <div class="w3-third">
    <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
-    <h3 class="color:white">Fandom Wiki</h3><br>
+    <h3 style="color:white">Fandom Wiki</h3><br>
     <img src="https://github.com/MWB6763/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true" width="100" height="100" onclick="goToWiki()" style="cursor:pointer"><br><br>
     <button class="w3-button w3-theme w3-xlarge" title="Go to wiki" onclick="goToWiki()" style="border-radius:5px"><a href="https://splashy-studio.fandom.com/wiki/Splashy_Studio_Wiki" id="wikiLinkText">Look At Wiki</a></button>
    </div>
  </div>
 </div>
+<h1 class="w3-xxxlarge w3-center" style="color:aqua">Downloads</h1>
+<div class="w3-row-padding w3-margin-top w3-center">
+ <div class="w3-card" style="min-height:275px;background:#003399;border-radius:10px">
+   <h2 style="color:white">1.5</h2>
+   <h3 style="color:#80eaff">September 27, 2021</h3>
+  <img src="package.png" width="100"><br><br>
+  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 1.5" onclick="get1_5()"><a href="SS1.5.zip" id="download1">DOWNLOAD</a></button>
+ </div>
+ <div class="w3-card" style="min-height:275px;background:#003399;border-radius:10px">
+   <h2 style="color:white">2.1</h2>
+   <h3 style="color:#80eaff">October 3, 2021</h3>
+  <img src="package.png" width="100"><br><br>
+  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 2.1" onclick="get2_1()"><a href="SS2.1.zip" id="download2">DOWNLOAD</a></button>
+ </div>
+</div>
+<br>
 <footer class="w3-container w3-theme-dark w3-padding-16 w3-margin-top">
   <div class="w3-center">
    Sponsored by and created using <a href="https://www.w3schools.com" title="Go to W3schools"><b>w3.css!</b></a>
