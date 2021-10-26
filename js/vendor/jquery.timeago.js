@@ -87,8 +87,8 @@
         days < 30 && substitute($l.days, Math.round(days)) ||
         days < 45 && substitute($l.month, 1) ||
         days < 365 && substitute($l.months, Math.round(days / 30)) ||
-        weeks < 1.1 && substitute($l.week, 1) ||
-        weeks < 2.1  && substitute($l.weeks, Math.round(days / 7));
+        days < 7.5 && substitute($l.week, 1) ||
+        days < 14.5  && substitute($l.weeks, Math.round(days / 7)) ||
         years < 1.5 && substitute($l.year, 1) ||
         substitute($l.years, Math.round(years));
       var separator = $l.wordSeparator || "";
