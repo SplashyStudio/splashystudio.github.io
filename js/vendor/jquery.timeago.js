@@ -41,6 +41,8 @@
         hours: "%d hours",
         day: "1 day",
         days: "%d days",
+        week: "1 week",
+        weeks: "%d weeks",
         month: "1 month",
         months: "%d months",
         year: "1 year",
@@ -69,6 +71,7 @@
       var minutes = seconds / 60;
       var hours = minutes / 60;
       var days = hours / 24;
+      var weeks = days / 7;
       var years = days / 365;
       function substitute(stringOrFunction, number) {
         var string = $.isFunction(stringOrFunction) ? stringOrFunction(number, distanceMillis) : stringOrFunction;
@@ -84,6 +87,8 @@
         days < 30 && substitute($l.days, Math.round(days)) ||
         days < 45 && substitute($l.month, 1) ||
         days < 365 && substitute($l.months, Math.round(days / 30)) ||
+        days < 7.5 && substitute($l.week, 1) ||
+        days < 14.5 && substitute($l.weeks, Math.round(days / 7));
         years < 1.5 && substitute($l.year, 1) ||
         substitute($l.years, Math.round(years));
       var separator = $l.wordSeparator || "";
