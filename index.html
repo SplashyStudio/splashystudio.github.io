@@ -6,6 +6,11 @@
   background: linear-gradient(#0044cc, #003399);
  }
  a{text-decoration:none;}
+ #ssSidebar {
+  width: 100%;
+  padding-top: 10%;
+  font-size: 20px;
+ }
 </style>
 <script>
  function goToRepository() {
@@ -32,6 +37,12 @@
  function get4_0() {
   document.getElementById("download4").click();
  }
+ function w3_open() {
+  document.getElementById("ssSidebar").style.display = "block";
+ }
+ function w3_close() {
+  document.getElementById("ssSidebar").style.display = "none";
+ }
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/vendor/jquery.timeago.js"></script>
@@ -41,8 +52,24 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="icon" href="https://github.com/MWB6763/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
 <title>Splashy Studio | MWB</title>
+<nav id="ssSidebar" class="w3-sidebar w3-bar-block w3-animate-left w3-center" style="display:none">
+ <h1 class="w3-xxxlarge">Side Navigation</h1><hr>
+ <button onclick="w3_close()" class="w3-bar-item w3-button"><b class="w3-text-theme">Close</b> <i class="fa fa-remove w3-text-theme"></i></button><hr>
+ <h2 class="w3-text-theme">Links</h2>
+ <a onclick="goToRepository()" class="w3-bar-item w3-button" title="Go to repository">GitHub</a>
+ <a onclick="goToPlaylist()" class="w3-bar-item w3-button" title="Go to playlist">YouTube</a>
+ <a onclick="goToWiki()" class="w3-bar-item w3-button" title="Go to wiki">Fandom</a><hr>
+ <h2 class="w3-text-theme">Downloads</h2>
+ <a onclick="get1_5()" class="w3-bar-item w3-button" title="Download Splashy Studio 1.5">1.5</a>
+ <a onclick="get2_2()" class="w3-bar-item w3-button" title="Download Splashy Studio 2.2">2.2</a>
+ <a onclick="get3_0()" class="w3-bar-item w3-button" title="Download Splashy Studio 3.0">3.0</a>
+ <a onclick="get4_0()" class="w3-bar-item w3-button" title="Download Splashy Studio 4.0">4.0</a><hr>
+ <h2 class="w3-text-theme">Show Your Opinion</h2>
+ <a onclick="goToForm()" class="w3-bar-item w3-button" title="Go to form">Google Form</a>
+</nav>
 <header class="w3-container w3-padding" id="ssHeader">
  <div class="w3-center">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i><br>
    <img src="https://github.com/MWB6763/Splashy-Studio-1/blob/main/ssIcon.png?raw=true" width="120" height="120" style="cursor:pointer" onclick="location.reload()" title="Icon">
    <h1 class="w3-xxxlarge" style="color:aqua">Splashy Studio&trade;</h1>
    <h2 class="w3-xlarge" style="color:aqua">Website</h2>
@@ -105,11 +132,11 @@
 </div>
 <h1 class="w3-xxxlarge w3-center" style="color:aqua">Show Your Opinion</h1>
 <div class="w3-center">
-<button class="w3-button w3-theme w3-xlarge" onclick="goToForm()" style="border-radius:5px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjNnl_paiga0lXFX1Pj8pBahuH2qNkZZBI_ja4HbzbVeDS6g/viewform?usp=sf_link" id="formLinkText">Share On This Google Form</a></button>
+<button class="w3-button w3-theme w3-xlarge" onclick="goToForm()" style="border-radius:5px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjNnl_paiga0lXFX1Pj8pBahuH2qNkZZBI_ja4HbzbVeDS6g/viewform?usp=sf_link" id="formLinkText" title="Go to form">Share On This Google Form</a></button>
 </div>
 <br>
 <footer class="w3-container w3-theme-dark w3-padding-16 w3-margin-top">
   <div class="w3-center">
-   Created borrowing <a href="https://www.w3schools.com" title="Go to W3schools"><b>w3.css</b></a> and <a href="https://timeago.yarp.com" title="Go to Timeago"><b>jquery-timeago!</b></a>
+   Created borrowing <a href="https://www.w3schools.com" title="Go to W3schools"><b>w3.css</b></a> and <a href="https://timeago.yarp.com" title="Go to Timeago"><b>jQuery-timeago!</b></a>
  </div>
 </footer>
