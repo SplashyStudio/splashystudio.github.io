@@ -33,9 +33,6 @@
  }
 </style>
 <script>
- function goToRepository() {
-  document.getElementById("repositoryLinkText").click();
- }
  function goToPlaylist() {
   document.getElementById("playlistLinkText").click();
  }
@@ -93,7 +90,6 @@
  <a onclick="w3_close()" href="#downloads" class="w3-bar-item w3-button" style="color:#2f3c87" title="Downloads Section"><b>Downloads</b></a>
  <a onclick="w3_close()" href="#credits" class="w3-bar-item w3-button" style="color:#2f3c87" title="Credits Section"><b>Credits</b></a><hr>
  <h2 class="w3-text-theme">Links</h2>
- <a onclick="goToRepository()" class="w3-bar-item w3-button" title="Go to repository">GitHub</a>
  <a onclick="goToPlaylist()" class="w3-bar-item w3-button" title="Go to playlist">YouTube</a>
  <a onclick="goToWiki()" class="w3-bar-item w3-button" title="Go to wiki">Fandom</a>
  <a onclick="goToForm()" class="w3-bar-item w3-button" title="Go to form">Google Form</a><hr>
@@ -123,13 +119,6 @@
 </div><br>
 <div class="w3-xxxlarge w3-center" style="color:aqua" id="links">Links</div>
 <div class="w3-row-padding w3-center w3-margin-top">
- <div class="w3-third">
-   <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
-    <h3 style="color:white">GitHub Source Code</h3><br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/768px-Github-desktop-logo-symbol.svg.png" width="100" height="100" onclick="goToRepository()" style="cursor:pointer"><br><br>
-    <button class="w3-button w3-theme w3-xlarge" title="Go to repository" onclick="goToRepository()" style="border-radius:5px"><a href="https://github.com/SplashyStudio/splashystudio.github.io" id="repositoryLinkText">Look At Code</a></button>
-   </div>
- </div>
  <div class="w3-third">
   <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
     <h3 style="color:white">YouTube Playlist</h3><br>
