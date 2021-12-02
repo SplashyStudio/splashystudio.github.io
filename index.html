@@ -31,7 +31,7 @@
  #developer {
   font-family: "Baloo Thambi";
  }
- #downloadLinkText:hover {
+ .canUnderlineOnHover:hover {
   text-decoration: underline;
  }
 </style>
@@ -95,27 +95,27 @@
 <title>Splashy Studio&trade; &#124; MWB</title>
 <nav id="ssSidebar" class="w3-sidebar w3-bar-block w3-animate-left w3-center" style="display:none">
  <h1 class="w3-xxxlarge"><i class="fa fa-bars"></i> Side Navigation</h1><hr>
- <button onclick="w3_close()" class="w3-bar-item w3-button w3-text-theme" title="Close Navigation"><b>Close</b> <i class="fa fa-remove"></i></button><hr>
+ <button onclick="w3_close()" class="w3-bar-item w3-button w3-text-theme" title="Close Navigation" class="canUnderlineOnHover"><b>Close</b> <i class="fa fa-remove"></i></button><hr>
  <h2 class="w3-text-theme"><i class="fa fa-bookmark"></i> Sections</h2>
- <a onclick="w3_close()" href="#about" class="w3-bar-item w3-button" style="color:#2f3c87" title="About Section"><b><i class="fa fa-question"></i> About</b></a>
- <a onclick="w3_close()" href="#links" class="w3-bar-item w3-button" style="color:#2f3c87" title="Links Section"><b><i class="fa fa-external-link-square"></i> Links</b></a>
- <a onclick="w3_close()" href="#downloads" class="w3-bar-item w3-button" style="color:#2f3c87" title="Downloads Section"><b><i class="fa fa-download"></i> Downloads</b></a>
- <a onclick="w3_close()" href="#credits" class="w3-bar-item w3-button" style="color:#2f3c87" title="Credits Section"><b><i class="fa fa-external-link"></i> Credits</b></a><hr>
+ <a onclick="w3_close()" href="#about" class="w3-bar-item w3-button" style="color:#2f3c87" title="About Section" class="canUnderlineOnHover"><b><i class="fa fa-question"></i> About</b></a>
+ <a onclick="w3_close()" href="#links" class="w3-bar-item w3-button" style="color:#2f3c87" title="Links Section" class="canUnderlineOnHover"><b><i class="fa fa-external-link-square"></i> Links</b></a>
+ <a onclick="w3_close()" href="#downloads" class="w3-bar-item w3-button" style="color:#2f3c87" title="Downloads Section" class="canUnderlineOnHover"><b><i class="fa fa-download"></i> Downloads</b></a>
+ <a onclick="w3_close()" href="#credits" class="w3-bar-item w3-button" style="color:#2f3c87" title="Credits Section" class="canUnderlineOnHover"><b><i class="fa fa-external-link"></i> Credits</b></a><hr>
  <h2 class="w3-text-theme"><i class="fa fa-external-link-square"></i> Links</h2>
- <a onclick="goToOrganization()" class="w3-bar-item w3-button" title="Go to organization"><i class="fa fa-search"></i> Organization</a>
- <a onclick="goToPlaylist()" class="w3-bar-item w3-button" title="Go to playlist"><i class="fa fa-play"></i> YouTube</a>
- <a onclick="goToWiki()" class="w3-bar-item w3-button" title="Go to wiki"><i class="fa fa-book"></i> Fandom</a>
- <a onclick="goToForm()" class="w3-bar-item w3-button" title="Go to form"><i class="fa fa-pencil"></i> Google Form</a><hr>
+ <a onclick="goToOrganization()" class="w3-bar-item w3-button" title="Go to organization" class="canUnderlineOnHover"><i class="fa fa-github"></i> Organization</a>
+ <a onclick="goToPlaylist()" class="w3-bar-item w3-button" title="Go to playlist" class="canUnderlineOnHover"><i class="fa fa-play"></i> YouTube</a>
+ <a onclick="goToWiki()" class="w3-bar-item w3-button" title="Go to wiki" class="canUnderlineOnHover"><i class="fa fa-book"></i> Fandom</a>
+ <a onclick="goToForm()" class="w3-bar-item w3-button" title="Go to form" class="canUnderlineOnHover"><i class="fa fa-pencil"></i> Google Form</a><hr>
  <h2 class="w3-text-theme"><i class="fa fa-download"></i> Downloads</h2>
  <a class="w3-bar-item w3-button" title="See more downloads" style="color:#2f3c87" href="https://splashystudio.github.io/downloads"><b><i class="fa fa-download"></i> See All</b></a>
- <a onclick="get1_5()" class="w3-bar-item w3-button" title="Download Splashy Studio 1&#46;5"><i class="fa fa-download"></i> 1&#46;5</a>
- <a onclick="get2_2()" class="w3-bar-item w3-button" title="Download Splashy Studio 2&#46;2"><i class="fa fa-download"></i> 2&#46;2</a>
- <a onclick="get3_0()" class="w3-bar-item w3-button" title="Download Splashy Studio 3&#46;0"><i class="fa fa-download"></i> 3&#46;0</a>
- <a onclick="get4_0()" class="w3-bar-item w3-button" title="Download Splashy Studio 4&#46;0"><i class="fa fa-download"></i> 4&#46;0</a>
- <a onclick="get5_1()" class="w3-bar-item w3-button" title="Download Splashy Studio 5&#46;1"><i class="fa fa-download"></i> 5&#46;1</a><hr>
+ <a onclick="get1_5()" class="w3-bar-item w3-button" title="Download Splashy Studio 1&#46;5" class="canUnderlineOnHover"><i class="fa fa-download"></i> 1&#46;5</a>
+ <a onclick="get2_2()" class="w3-bar-item w3-button" title="Download Splashy Studio 2&#46;2" class="canUnderlineOnHover"><i class="fa fa-download"></i> 2&#46;2</a>
+ <a onclick="get3_0()" class="w3-bar-item w3-button" title="Download Splashy Studio 3&#46;0" class="canUnderlineOnHover"><i class="fa fa-download"></i> 3&#46;0</a>
+ <a onclick="get4_0()" class="w3-bar-item w3-button" title="Download Splashy Studio 4&#46;0" class="canUnderlineOnHover"><i class="fa fa-download"></i> 4&#46;0</a>
+ <a onclick="get5_1()" class="w3-bar-item w3-button" title="Download Splashy Studio 5&#46;1" class="canUnderlineOnHover"><i class="fa fa-download"></i> 5&#46;1</a><hr>
  <h2 class="w3-text-theme"><i class="fa fa-external-link"></i> Credits</h2>
- <a onclick="goToW3Schools()" class="w3-bar-item w3-button" title="Go to W3Schools"><i class="fa fa-building"></i> W3Schools</a>
- <a onclick="goToTimeago()" class="w3-bar-item w3-button" title="Go to Timeago"><i class="fa fa-clock-o"></i> Timeago</a><hr>
+ <a onclick="goToW3Schools()" class="w3-bar-item w3-button" title="Go to W3Schools" class="canUnderlineOnHover"><i class="fa fa-building"></i> W3Schools</a>
+ <a onclick="goToTimeago()" class="w3-bar-item w3-button" title="Go to Timeago" class="canUnderlineOnHover"><i class="fa fa-clock-o"></i> Timeago</a><hr>
 </nav>
 <header class="w3-container w3-padding" id="ssHeader">
  <div class="w3-center">
@@ -137,69 +137,69 @@
   <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
    <h3 style="color:white">GitHub Organization</h3><br>
    <img src="https://avatars.githubusercontent.com/u/93416211?s=200&v=4" width="100" height="100" onclick="goToOrganization()" style="cursor:pointer;border-radius:50px" title="Go to organization"><br><br>
-   <button class="w3-button w3-theme w3-xlarge" title="Go to organization" onclick="goToOrganization()" style="border-radius:5px"><a href="https://github.com/SplashyStudio" id="organizationLinkText"><i class="fa fa-github-alt"></i> Look At Source</a></button>
+   <button class="w3-button w3-theme w3-xlarge" title="Go to organization" onclick="goToOrganization()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://github.com/SplashyStudio" id="organizationLinkText"><i class="fa fa-github"></i> Look At Source</a></button>
   </div>
  </div>
  <div class="w3-third">
   <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
     <h3 style="color:white">YouTube Playlist</h3><br>
     <img src="https://qonaskamkuk.com/wp-content/uploads/2019/08/youtube-logo.png" width="100" height="100" onclick="goToPlaylist()" style="cursor:pointer;border-radius:50px" title="Go to playlist"><br><br>
-   <button class="w3-button w3-theme w3-xlarge" title="Go to playlist" onclick="goToPlaylist()" style="border-radius:5px"><a href="https://www.youtube.com/playlist?list=PLSRLBCuGGPd5tm0VOdhQkVcTt6I00O6h7" id="playlistLinkText"><i class="fa fa-play"></i> Look At Playlist</a></button>
+   <button class="w3-button w3-theme w3-xlarge" title="Go to playlist" onclick="goToPlaylist()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://www.youtube.com/playlist?list=PLSRLBCuGGPd5tm0VOdhQkVcTt6I00O6h7" id="playlistLinkText"><i class="fa fa-play"></i> Look At Playlist</a></button>
   </div>
  </div>
  <div class="w3-third">
    <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
     <h3 style="color:white">Fandom Wiki</h3><br>
     <img src="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true" width="100" height="100" onclick="goToWiki()" style="cursor:pointer;border-radius:50px" title="Go to wiki"><br><br>
-    <button class="w3-button w3-theme w3-xlarge" title="Go to wiki" onclick="goToWiki()" style="border-radius:5px"><a href="https://splashy-studio.fandom.com/wiki/Splashy_Studio_Wiki" id="wikiLinkText"><i class="fa fa-book"></i> Look At Wiki</a></button>
+    <button class="w3-button w3-theme w3-xlarge" title="Go to wiki" onclick="goToWiki()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://splashy-studio.fandom.com/wiki/Splashy_Studio_Wiki" id="wikiLinkText"><i class="fa fa-book"></i> Look At Wiki</a></button>
    </div>
  </div>
  <div class="w3-third">
   <div class="w3-card" style="min-height:260px;min-width:230px;background:#003399;border-radius:10px">
    <h3 style="color:white">Google Form</h3><br>
    <img src="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png" width="100" height="100" onclick="goToForm()" style="cursor:pointer;border-radius:50px" title="Go to form"><br><br>
-   <button class="w3-button w3-theme w3-xlarge" title="Go to form" onclick="goToForm()" style="border-radius:5px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjNnl_paiga0lXFX1Pj8pBahuH2qNkZZBI_ja4HbzbVeDS6g/viewform?embedded=true" id="formLinkText"><i class="fa fa-pencil"></i> Sign Opinion Form</a></button>
+   <button class="w3-button w3-theme w3-xlarge" title="Go to form" onclick="goToForm()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjNnl_paiga0lXFX1Pj8pBahuH2qNkZZBI_ja4HbzbVeDS6g/viewform?embedded=true" id="formLinkText"><i class="fa fa-pencil"></i> Sign Opinion Form</a></button>
   </div>
  </div>
 </div>
 <h1 class="w3-xxxlarge w3-center" style="color:aqua" id="downloads"><i class="fa fa-download"></i> Downloads</h1>
-<h3 class="w3-center" style="color:#19b8ff" id="downloadLinkText"><a href="https://splashystudio.github.io/downloads" title="See more downloads">See All</a></h3>
+<h3 class="w3-center" style="color:#19b8ff" id="downloadLinkText" class="canUnderlineOnHover"><a href="https://splashystudio.github.io/downloads" title="See more downloads">See All</a></h3>
 <div class="w3-row-padding w3-margin-top w3-center">
  <div class="w3-card" style="width:700px;margin:auto;min-height:275px;background:#003399;border-radius:10px">
    <h2 style="color:white">1&#46;5</h2>
   <h3 style="color:#80eaff"><i class="fa fa-clock-o"></i> <time class="timeago" datetime="27 September 2021 12:00"></time> on September 27&#44; 2021</h3>
   <img src="package.png" width="100"><br><br>
-  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 1&#46;5" onclick="get1_5()" style="border-radius:5px"><a href="https://download856.mediafire.com/g4l2k5lj47cg/yr3otknxb6hfy1h/SS1.5.zip" id="download1"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
+  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 1&#46;5" onclick="get1_5()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://download856.mediafire.com/g4l2k5lj47cg/yr3otknxb6hfy1h/SS1.5.zip" id="download1"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
  </div>
  <div class="w3-card" style="width:700px;margin:auto;min-height:275px;background:#003399;border-radius:10px">
    <h2 style="color:white">2&#46;2</h2>
   <h3 style="color:#80eaff"><i class="fa fa-clock-o"></i> <time class="timeago" datetime="5 October 2021 12:00"></time> on October 5&#44; 2021</h3>
   <img src="package.png" width="100"><br><br>
-  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 2&#46;2" onclick="get2_2()" style="border-radius:5px"><a href="https://download1650.mediafire.com/lk9tq2wszlyg/4rwbrruh08wrizl/SS2.2.zip" id="download2"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
+  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 2&#46;2" onclick="get2_2()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://download1650.mediafire.com/lk9tq2wszlyg/4rwbrruh08wrizl/SS2.2.zip" id="download2"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
  </div>
  <div class="w3-card" style="width:700px;margin:auto;min-height:275px;background:#003399;border-radius:10px">
   <h2 style="color:white">3&#46;0</h2>
   <h3 style="color:#80eaff"><i class="fa fa-clock-o"></i> <time class="timeago" datetime="11 October 2021 12:00"></time> on October 11&#44; 2021</h3>
   <img src="package.png" width="100"><br><br>
-  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 3&#46;0" onclick="get3_0()" style="border-radius:5px"><a href="https://download1586.mediafire.com/21q3ay2p3dsg/wocnud6sgjhx2qz/SS3.zip" id="download3"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
+  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 3&#46;0" onclick="get3_0()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://download1586.mediafire.com/21q3ay2p3dsg/wocnud6sgjhx2qz/SS3.zip" id="download3"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
  </div>
  <div class="w3-card" style="width:700px;margin:auto;min-height:275px;background:#003399;border-radius:10px">
   <h2 style="color:white">4&#46;0</h2>
   <h3 style="color:#80eaff"><i class="fa fa-clock-o"></i> <time class="timeago" datetime="19 October 2021 12:00"></time> on October 19&#44; 2021</h3>
   <img src="package.png" width="100"><br><br>
-  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 4&#46;0" onclick="get4_0()" style="border-radius:5px"><a href="https://download1347.mediafire.com/9r04zy1j206g/qnm2d2zjj733d1r/SS4.zip" id="download4"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
+  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 4&#46;0" onclick="get4_0()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://download1347.mediafire.com/9r04zy1j206g/qnm2d2zjj733d1r/SS4.zip" id="download4"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
  </div>
  <div class="w3-card" style="width:700px;margin:auto;min-height:275px;background:#003399;border-radius:10px">
   <h2 style="color:white">5&#46;1</h2>
   <h3 style="color:#80eaff"><i class="fa fa-clock-o"></i> <time class="timeago" datetime="13 November 2021 12:00"></time> on November 13&#44; 2021</h3>
   <img src="package.png" width="100"><br><br>
-  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 5&#46;1" onclick="get5_1()" style="border-radius:5px"><a href="https://download2268.mediafire.com/b0e8gd5w33vg/trzi5zpe6pv2l4v/SS5.1.zip" id="download5"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
+  <button class="w3-button w3-theme w3-xlarge" title="Download Splashy Studio 5&#46;1" onclick="get5_1()" style="border-radius:5px" class="canUnderlineOnHover"><a href="https://download2268.mediafire.com/b0e8gd5w33vg/trzi5zpe6pv2l4v/SS5.1.zip" id="download5"><i class="fa fa-download"></i> DOWNLOAD</a></button><hr style="visibility:hidden">
  </div>
 </div><br>
 <footer class="w3-container w3-theme-dark w3-padding-16 w3-margin-top">
   <div class="w3-center">
    <h2 id="credits"><i class="fa fa-external-link"></i> Credits</h2>
-   Created borrowing <a href="https://www.w3schools.com" title="Go to W3Schools" id="w3Text"><b><i class="fa fa-building"></i> W3&#46;css</b></a> and <a href="https://timeago.yarp.com" title="Go to Timeago" id="timeagoText"><b><i class="fa fa-clock-o"></i> Timeago&#33;</b></a>
+   Created borrowing <a href="https://www.w3schools.com" title="Go to W3Schools" id="w3Text" class="canUnderlineOnHover"><b><i class="fa fa-building"></i> W3&#46;css</b></a> and <a href="https://timeago.yarp.com" title="Go to Timeago" id="timeagoText" class="canUnderlineOnHover"><b><i class="fa fa-clock-o"></i> Timeago&#33;</b></a>
    <p style="font-size:11px">&copy; Host property of <b>MWB</b> <i class="fa fa-copyright"></i></p>
  </div>
 </footer>
