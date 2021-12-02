@@ -39,9 +39,6 @@
  function goToOrganization() {
   document.getElementById("organizationLinkText").click();
  }
- function goToAccount() {
-  document.getElementById("accountLinkText").click();
- }
  function goToPlaylist() {
   document.getElementById("playlistLinkText").click();
  }
@@ -79,20 +76,21 @@
   document.getElementById("timeagoText").click();
  }
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/vendor/jquery.timeago.js"></script>
 <script src="js/global.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/font-awesome.min.css">
 <meta name="title" content="Splashy Studio&trade; Website">
 <meta name="author" content="MWB">
 <meta name="description" content="Splashy Studio&trade; is art software that lets you paint images or else editing them&#46;">
-<meta name="keywords" content="splashy studio, splashystudiowebsite, splashy, studio, website">
 <meta name="image" content="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<meta name="application-name" content="Splashy Studio&trade; Website">
 <meta property="og:title" content="Splashy Studio&trade; Website">
 <meta property="og:author" content="MWB">
 <meta property="og:description" content="Splashy Studio&trade; is art software that lets you paint images or else editing them&#46;">
+<meta property="og:image" content="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
 <link rel="icon" href="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
 <title>Splashy Studio&trade; &#124; MWB</title>
 <nav id="ssSidebar" class="w3-sidebar w3-bar-block w3-animate-left w3-center" style="display:none">
@@ -105,7 +103,6 @@
  <a onclick="w3_close()" href="#credits" class="w3-bar-item w3-button" style="color:#2f3c87" title="Credits Section"><b><i class="fa fa-external-link"></i> Credits</b></a><hr>
  <h2 class="w3-text-theme"><i class="fa fa-external-link-square"></i> Links</h2>
  <a onclick="goToOrganization()" class="w3-bar-item w3-button" title="Go to organization"><i class="fa fa-search"></i> Organization</a>
- <a onclick="goToAccount()" class="w3-bar-item w3-button" title="Go to account"><i class="fa fa-search"></i> Account</a>
  <a onclick="goToPlaylist()" class="w3-bar-item w3-button" title="Go to playlist"><i class="fa fa-play"></i> YouTube</a>
  <a onclick="goToWiki()" class="w3-bar-item w3-button" title="Go to wiki"><i class="fa fa-book"></i> Fandom</a>
  <a onclick="goToForm()" class="w3-bar-item w3-button" title="Go to form"><i class="fa fa-pencil"></i> Google Form</a><hr>
@@ -140,14 +137,7 @@
   <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
    <h3 style="color:white">GitHub Organization</h3><br>
    <img src="https://avatars.githubusercontent.com/u/93416211?s=200&v=4" width="100" height="100" onclick="goToOrganization()" style="cursor:pointer;border-radius:50px" title="Go to organization"><br><br>
-   <button class="w3-button w3-theme w3-xlarge" title="Go to organization" onclick="goToOrganization()" style="border-radius:5px"><a href="https://github.com/SplashyStudio" id="organizationLinkText"><i class="fa fa-search"></i> Look At Source</a></button>
-  </div>
- </div>
- <div class="w3-third">
-  <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
-   <h3 style="color:white">Support MWB On GitHub</h3><br>
-   <img src="https://avatars.githubusercontent.com/u/77411288?v=4" width="100" onclick="goToAccount()" style="cursor:pointer;border-radius:50px" title="Go to account"><br><br>
-   <button class="w3-button w3-theme w3-xlarge" title="Go to account" onclick="goToAccount()" style="border-radius:5px"><a href="https://github.com/MWB6763" id="accountLinkText"><i class="fa fa-search"></i> Look At Account</a></button>
+   <button class="w3-button w3-theme w3-xlarge" title="Go to organization" onclick="goToOrganization()" style="border-radius:5px"><a href="https://github.com/SplashyStudio" id="organizationLinkText"><i class="fa fa-github-alt"></i> Look At Source</a></button>
   </div>
  </div>
  <div class="w3-third">
