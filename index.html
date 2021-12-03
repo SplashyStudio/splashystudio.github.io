@@ -39,6 +39,9 @@
  function goToOrganization() {
   document.getElementById("organizationLinkText").click();
  }
+ function goToOnlineSite() {
+  document.getElementById("onlineSiteLinkText").click();
+ }
  function goToPlaylist() {
   document.getElementById("playlistLinkText").click();
  }
@@ -64,10 +67,10 @@
   document.getElementById("download5").click();
  }
  function w3_open() {
-  document.getElementById("ssSidebar").style.display = "block";
+  document.getElementById("ssSidebar").style.display="block";
  }
  function w3_close() {
-  document.getElementById("ssSidebar").style.display = "none";
+  document.getElementById("ssSidebar").style.display="none";
  }
  function goToW3Schools() {
   document.getElementById("w3Text").click();
@@ -103,6 +106,7 @@
  <a onclick="w3_close()" href="#credits" class="w3-bar-item w3-button canUnderlineOnHover" style="color:#2f3c87" title="Credits Section"><b><i class="fa fa-external-link"></i> Credits</b></a><hr>
  <h2 class="w3-text-theme"><i class="fa fa-external-link-square"></i> Links</h2>
  <a onclick="goToOrganization()" class="w3-bar-item w3-button canUnderlineOnHover" title="Go to organization"><i class="fa fa-github"></i> Organization</a>
+ <a onclick="goToOnlineSite()" class="w3-bar-item w3-button canUnderlineOnHover" title="Go to online site"><i class="fa fa-globe"></i> Online</a>
  <a onclick="goToPlaylist()" class="w3-bar-item w3-button canUnderlineOnHover" title="Go to playlist"><i class="fa fa-play"></i> YouTube</a>
  <a onclick="goToWiki()" class="w3-bar-item w3-button canUnderlineOnHover" title="Go to wiki"><i class="fa fa-book"></i> Fandom</a>
  <a onclick="goToForm()" class="w3-bar-item w3-button canUnderlineOnHover" title="Go to form"><i class="fa fa-pencil"></i> Google Form</a><hr>
@@ -138,6 +142,13 @@
    <h3 style="color:white">GitHub Organization</h3><br>
    <img src="https://avatars.githubusercontent.com/u/93416211?s=200&v=4" width="100" height="100" onclick="goToOrganization()" style="cursor:pointer;border-radius:50px" title="Go to organization"><br><br>
    <button class="w3-button w3-theme w3-xlarge canUnderlineOnHover" title="Go to organization" onclick="goToOrganization()" style="border-radius:5px"><a href="https://github.com/SplashyStudio" id="organizationLinkText"><i class="fa fa-github"></i> Look At Source</a></button>
+  </div>
+ </div>
+ <div class="w3-third">
+  <div class="w3-card" style="min-height:260px;background:#003399;border-radius:10px">
+   <h3 style="color:white">Play Online</h3><br>
+   <img src="https://cdn4.iconfinder.com/data/icons/ios7-active-strategy/512/globe_earth_world_internet-512.png" width="100" height="100" onclick="goToOnlineSite()" style="cursor:pointer;border-radius:50px" title="Go to online site"><br><br>
+   <button class="w3-button w3-theme w3-xlarge canUnderlineOnHover" title="Go to online site" onclick="goToOnlineSite()" style="border-radius:5px"><a href="https://splashystudio.github.io/online" id="onlineSiteLinkText"><i class="fa fa-globe"></i> Look Online</a></button>
   </div>
  </div>
  <div class="w3-third">
