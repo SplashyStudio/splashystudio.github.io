@@ -1,0 +1,493 @@
+<meta name="title" content="Online | Splashy Studio&trade; Website">
+<meta name="author" content="MWB">
+<meta name="description" content="The online version of Splashy Studio&trade; is good enough for systems who don't support downloading the application.">
+<meta name="image" content="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<meta name="application-name" content="Online | Splashy Studio&trade; Website">
+<meta name="keywords" content="splashy,studio,splashystudio,program,online,splashystudioonline,support,onlineversion,onlinever,website">
+<meta name="revised" content="&copy; 2021 Splashy Studio&trade;">
+<meta name="url" content="splashystudio.github.io/online">
+<meta name="identifier-URL" content="splashystudio.github.io/online">
+<meta name="language" content="EN">
+<meta name="subject" content="Art">
+<meta name="copyright" content="MWB">
+<meta name="designer" content="MWB">
+<meta name="category" content="Art">
+<meta name="owner" content="MWB">
+<meta name="topic" conent="Art">
+<meta name="reply-to" content="mwb6763@gmail.com">
+<meta name="summary" content="The online version of Splashy Studio&trade; is good enough for systems who don't support downloading the application.">
+<meta name="classification" content="Art">
+<meta property="og:title" content="Online | Splashy Studio&trade; Website">
+<meta property="og:author" content="MWB">
+<meta property="og:description" content="The online version of Splashy Studio&trade; is good enough for systems who don't support downloading the application.">
+<meta property="og:image" content="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<meta property="og:site_name" content="Splashy Studio&trade; Online">
+<meta property="og:url" content="splashystudio.github.io/online">
+<meta property="og:type" content="website">
+<meta property="og:email" content="mwb6763@gmail.com">
+<meta name="og:title" content="Online | Splashy Studio&trade; Website">
+<meta name="og:author" content="MWB">
+<meta name="og:description" content="The online version of Splashy Studio&trade; is good enough for systems who don't support downloading the application.">
+<meta name="og:image" content="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<meta name="og:site_name" content="Splashy Studio&trade; Online">
+<meta name="og:url" content="splashystudio.github.io/online">
+<meta name="og:type" content="website">
+<meta name="og:email" content="mwb6763@gmail.com">
+<link rel="icon" href="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<link rel="shortcut icon" href="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<link rel="alternate icon" href="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<link rel="apple-touch-icon" href="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<link rel="apple-touch-icon-precomposed" href="https://github.com/SplashyStudio/Splashy-Studio-2/blob/main/ss2Icon.jpg?raw=true">
+<link rel="canonical" href="splashystudio.github.io/online">
+<link rel="author" content="MWB">
+<title>Online | Splashy Studio&trade; | MWB</title>
+<h3>Editing Modes</h3>
+<button id="mode1" onclick="showCustomImageMode()" title="Make your own drawn image">Create Image</button><br><br>
+<button id="mode2" onclick="showEditImageMode()" title="Edit pictures on your computer">Edit Image</button><br><br>
+<div id="customImageMode">
+     <h3>Format</h3>
+     <div id="favoritesContainer">
+          <label for="favoriteColor">Color</label>
+          <input type="color" style="cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer" name="favcolor" id="favcolor" value="#ff0000" onchange="favoriteColor(this)">
+     </div><br>
+     <div id="penSize" class="penSize">
+          <label for="penSize">Size</label>
+          <input type="range" name="penSize" style="cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer" id="penSlider" value="10" step="1" min="1" max="100" onchange="penSizeChange(this.value)">
+     </div><br>
+     <h3>File Actions</h3>
+     <a onclick="foto.export()" id="saveAndDownload" title="Save to your computer">&nbsp;Download&nbsp;</a>
+     <a onclick="wipeEverything()" id="clearCanvas" title="Erase everything">&nbsp;Wipe&nbsp;</a><br><br>
+     <div class="board">
+          <canvas id="paintingCanvas" width="500" height="500" style="background:white;cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer"></canvas>
+     </div><br>
+     <h3>Size</h3>
+     <a id="zoomIn" onclick="zoomCanvasIn()" title="Increase canvas size">&nbsp;+&nbsp;</a>
+     <a id="zoomNormally" onclick="zoomCanvasNormally()" title="Normalize canvas size">&nbsp;=&nbsp;</a>
+     <a id="zoomOut" onclick="zoomCanvasOut()" title="Decrease canvas size">&nbsp;-&nbsp;</a>
+</div>
+<div id="editingImageMode" style="display:none">
+     <h3>File Actions</h3>
+     <a onclick="foto.export()" id="editSaveAndDownload" title="Save to your computer">&nbsp;Download&nbsp;</a>
+     <a onclick="wipeEverything()" id="editClearCanvas" title="Erase everything">&nbsp;Wipe&nbsp;</a>
+     <div class="file-upload-section" onclick="selectImage()">
+          <input id="foto-file" type="file" style="font-family:Century Gothic;font-weight:bold"><p id="selectText" title="Select a picture">Select Picture</p>
+     </div><br>
+     <div class="img-container">
+          <img id="foto-image" class="image" draggable="false">
+     </div><br>
+     <h3>Size</h3>
+     <a id="editZoomIn" onclick="zoomEditCanvasIn()" title="Increase canvas size">&nbsp;+&nbsp;</a>
+     <a id="editZoomNormally" onclick="zoomEditCanvasNormally()" title="Normalize canvas size">&nbsp;=&nbsp;</a>
+     <a id="editZoomOut" onclick="zoomEditCanvasOut()" title="Decrease canvas size">&nbsp;-&nbsp;</a><br><br>
+     <h3>Filters</h3>
+     <div class="buttons-section">
+          <table class="buttons-table">
+               <tr>
+                    <td><button class="operation-btn" onclick="foto.grayscale()" title="GrayScale">GrayScale</button></td>
+                    <td><button class="operation-btn" onclick="foto.makeBright()" title="Brighter">Brighter</button></td>
+                    <td><button class="operation-btn" onclick="foto.makeDark()" title="Darker">Darker</button></td>
+               </tr>
+               <tr>
+                    <td><button class="operation-btn" onclick="foto.applyBlurFilter()" title="Blur">Blur</button></td>
+                    <td><button class="operation-btn" onclick="foto.applyEmbossFilter()" title="Emboss">Emboss</button></td>
+                    <td><button class="operation-btn" onclick="foto.applySharpFilter()" title="Sharp">Sharp</button></td>
+               </tr>
+               <tr>
+                    <td><button class="operation-btn" onclick="foto.makeTransparent()" title="Transparent">Transparent</button></td>
+                    <td><button class="operation-btn" onclick="foto.applyVintageFilter()" title="Vintage">Vintage</button></td>
+               </tr>
+          </table>
+     </div>
+</div><hr style="visibility:hidden">
+<div class="cursor"></div>
+<div id="consent-popup"><b><a class="canUnderlineOnHover link" onclick="hideConsent()">&times;</a> Please report any <a href="https://github.com/SplashyStudio/splashystudio.github.io/issues" class="canUnderlineOnHover link">issues or suggestions</a> here.</b></div>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.canUnderlineOnHover {
+  text-decoration: none;
+}
+.canUnderlineOnHover:hover {
+  text-decoration: underline;
+}
+.link {
+  color: #19b8ff;
+}
+#consent-popup {
+ background: #f2f2f2;
+ color: black;
+ padding: 1rem 5rem;
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ left: 0;
+}
+body {
+     background: #0073e6;
+     text-align: center;
+     color: #80eaff;
+     user-select: none;
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorDefault.cur?raw=true"), default;
+}
+#mode1 {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     color: aqua;
+     background: #0000cc;
+     border-radius: 15px;
+}
+#mode1:hover {
+     background: #002266;
+}
+#mode2 {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     color: #80eaff;
+     background: #0000ff;
+     border-radius: 15px;
+}
+#mode2:hover {
+     background: #002266;
+}
+.cursor {
+     animation: cursorAnimation1 .5s infinite alternate;
+     pointer-events: none;
+     position: absolute;
+     width: 25px;
+     height: 25px;
+     border: 3px solid #80eaff;
+     transition-timing-function: ease-in-out;
+     opacity: 0;
+}
+.cursor::after {
+     animation: cursorAnimation2 .5s infinite alternate;
+     position: absolute;
+     content: "";
+     top: -7px;
+     left: -7px;
+     opacity: .5;
+     width: 25px;
+     height: 25px;
+}
+.expand {
+     animation: cursorAnimation3 .5s forwards;
+     border: 3px solid #80eaff;
+}
+@keyframes cursorAnimation1 {
+     transform: scale(1);
+}
+@keyframes cursorAnimation2 {
+     transform: scale(1);
+}
+@keyframes cursorAnimation3 {
+     0% {transform: scale(1); opacity: 100;}
+     50% {transform: scale(3.5); opacity: 50;}
+     100% {transform: scale(5); opacity: 0;}
+}
+#zoomIn {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     color: aqua;
+     background: #0000ff;
+     border-radius: 5px;
+}
+#zoomIn:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#zoomNormally {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     color: aqua;
+     background: #0000ff;
+     border-radius: 5px;
+}
+#zoomNormally:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#zoomOut {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     color: aqua;
+     background: #0000ff;
+     border-radius: 5px;
+}
+#zoomOut:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#editZoomIn {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     color: aqua;
+     background: #0000ff;
+     border-radius: 5px;
+}
+#editZoomIn:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#editZoomNormally {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     color: aqua;
+     background: #0000ff;
+     border-radius: 5px;
+}
+#editZoomNormally:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#editZoomOut {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     color: aqua;
+     background: #0000ff;
+     border-radius: 5px;
+}
+#editZoomOut:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#saveAndDownload {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     border-radius: 5px;
+     background: #0000ff;
+     color: aqua;
+}
+#saveAndDownload:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#clearCanvas {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     border-radius: 5px;
+     background: #0000ff;
+     color: aqua;
+}
+#clearCanvas:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#editSaveAndDownload {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     border-radius: 5px;
+     background: #0000ff;
+     color: aqua;
+}
+#editSaveAndDownload:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+#editClearCanvas {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     border-radius: 5px;
+     background: #0000ff;
+     color: aqua;
+}
+#editClearCanvas:hover {
+     background: #0000cc;
+     color: #00cccc;
+}
+.img-container {
+     margin: auto;
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     width: 50%;
+     height: 50%;
+}
+.image {
+     max-width: 100%;
+     max-height: 100%;
+}
+.file-upload-section {
+     width: 50%;
+     height: 50%;
+     margin: auto;
+     margin-top: 5%;
+     padding: 5px;
+     font-weight: bold;
+}
+#foto-file {
+     display: none;
+}
+.buttons-section {
+     margin: auto;
+     left: 25%;
+     top: 65%;
+     width: 50%;
+}
+.buttons-table {
+     width: 100%;
+}
+.buttons-table td {
+     padding: 3px;
+     text-align: center;
+}
+.operation-btn {
+     border: 0;
+     font-weight: bolder;
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     box-shadow: 0 .3rem .3rem rgba(0,0,0,.25), 0 0 .5rem rgba(0,0,0,.25);
+     padding: 10px;
+     width: 100%;
+     color: aqua;
+     background: #0000ff;
+}
+.operation-btn:hover {
+     background: #0000cc;
+     color: #0000cc;
+}
+#selectText {
+     cursor: url("https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true"), pointer;
+     background: #198cff;
+}
+#selectText:hover {
+     background: #0080ff;
+     color: aqua;
+}
+html {scrollbar-width:normal;scrollbar-color:#80eaff aqua;}
+html::-webkit-scrollbar {width:1vw;}
+html::-webkit-scrollbar-thumb {background-color:#80eaff;}
+html::-webkit-scrollbar-thumb:hover {background-color:teal;}
+html::-webkit-scrollbar-track {background-color:aqua;}
+html::-webkit-scrollbar-track:hover {background-color:black;}
+</style>
+<script>
+var splash=new Audio();
+splash.src="https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/splash.wav?raw=true";
+splash.play();
+const colorCircle=document.querySelectorAll(".color-circle");
+let penSize=10;
+let isDrawing;
+let x;
+let y;
+var canvas=document.querySelector("canvas");
+c=canvas.getContext("2d");
+document.getElementById("penSlider").title = document.getElementById("penSlider").value;
+canvas.addEventListener('mousemove', (event) => {
+     draw(event.offsetX,event.offsetY);
+});
+canvas.addEventListener("mouseup", () => {
+     isDrawing=false;
+     x=undefined;
+     y=undefined;
+});
+canvas.addEventListener("mousedown", (e) => {
+     isDrawing=true;
+     x=e.offsetX;
+     y=e.offsetY;
+});
+c.fillStyle="#ff0000";
+c.strokeStyle=c.fillStyle;
+document.getElementById("favcolor").title = document.getElementById("favcolor").value;
+function draw(x2,y2) {
+     if(isDrawing) {
+          c.beginPath();
+          c.arc(x2,y2,penSize,0,Math.PI*2);
+          c.closePath();
+          c.fill();
+     }
+}
+function drawLine(x,y,x2,y2) {
+     c.beginPath();
+     c.moveTo(x1,y1);
+     x.lineTo(x2,y2);
+     c.strokeStyle=c.fillStyle;
+     c.lineWidth=penSize*3;
+     c.stroke();
+}
+const removeActiveCircleColor=()=>{
+     colorCircle.forEach((circle) => {
+          circle.classList.remove("active");
+     });
+     document.getElementById("favcolor").title = document.getElementById("favcolor").value;
+};
+const selectColor=(elem)=>{
+     removeActiveCircleColor();
+     c.fillStyle=elem.getAttribute("data-color");
+     elem.classList.add("active");
+     document.getElementById("favcolor").title = document.getElementById("favcolor").value;
+};
+const favoriteColor=(elem)=>{
+     removeActiveCircleColor();
+     c.fillStyle=elem.value;
+     document.getElementById("favcolor").title = document.getElementById("favcolor").value;
+};
+function penSizeChange(pensize) {
+     penSize=pensize;
+     document.getElementById("penSlider").title = document.getElementById("penSlider").value;
+}
+document.querySelector("a").addEventListener('click', (event) => event.target.href = canvas.toDataURL());
+function wipeEverything() {
+     alert("You will get your art reset!");
+     location.reload();
+}
+function zoomCanvasIn() {
+     document.getElementById("paintingCanvas").style.width = "1000px";
+     document.getElementById("paintingCanvas").style.height = "1000px";
+}
+function zoomCanvasNormally() {
+     document.getElementById("paintingCanvas").style.width = "500px";
+     document.getElementById("paintingCanvas").style.height = "500px";
+}
+function zoomCanvasOut() {
+     document.getElementById("paintingCanvas").style.width = "250px";
+     document.getElementById("paintingCanvas").style.height = "250px";
+}
+const cursor=document.querySelector('.cursor');
+document.addEventListener('click', () => {
+     var click = new Audio();
+     click.src = "https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/click.mp3?raw=true";
+     click.play();
+     cursor.classList.add("expand");
+     setTimeout(() => {
+          cursor.classList.remove("expand");
+     },500);
+});
+document.addEventListener('mousemove', e => {
+     cursor.setAttribute("style", "top: "+(e.pageY-10)+"px; left: "+(e.pageX-10)+"px;");
+});
+function showCustomImageMode() {
+     document.getElementById("customImageMode").style.display = "block";
+     document.getElementById("editingImageMode").style.display = "none";
+     document.getElementById("mode1").style.background = "#0000cc";
+     document.getElementById("mode1").style.color = "aqua";
+     document.getElementById("mode2").style.background = "#0000ff";
+     document.getElementById("mode2").style.color = "#80eaff";
+}
+function showEditImageMode() {
+     document.getElementById("customImageMode").style.display = "none";
+     document.getElementById("editingImageMode").style.display = "block";
+     document.getElementById("mode1").style.background = "#0000ff";
+     document.getElementById("mode1").style.color = "#80eaff";
+     document.getElementById("mode2").style.background = "#0000cc";
+     document.getElementById("mode2").style.color = "aqua";
+}
+var foto;
+window.onload = function() {foto=new Foto();}
+function zoomEditCanvasIn() {
+     document.getElementById("foto-image").style.width = "1000px";
+     document.getElementById("foto-image").style.height = "1000px";
+}
+function zoomEditCanvasNormally() {
+     document.getElementById("foto-image").style.width = "500px";
+     document.getElementById("foto-image").style.height = "500px";
+}
+function zoomEditCanvasOut() {
+     document.getElementById("foto-image").style.width = "250px";
+     document.getElementById("foto-image").style.height = "250px";
+}
+document.onkeyup = function(e) {
+    if(e.ctrlKey && e.which == 73) {zoomCanvasIn();zoomEditCanvasIn();}
+    if(e.ctrlKey && e.which == 78) {zoomCanvasNormally();zoomEditCanvasNormally();}
+    if(e.ctrlKey && e.which == 79) {zoomCanvasOut();zoomEditCanvasOut();}
+    if(e.which == 17 && e.which == 49) {showCustomImageMode();}
+    if(e.which == 17 && e.which == 50) {showEditImageMode();}
+    if(e.ctrlKey && e.which == 70) {
+        document.getElementById("favcolor").click();
+    }
+    if(e.ctrlKey && e.which == 68) {foto.export();}
+    if(e.which == 18 && e.which == 73) {
+        document.getElementById("foto-file").click();
+    }
+}
+function selectImage() {
+     document.getElementById("foto-file").click();
+}
+function hideConsent() {
+     document.getElementById("consent-popup").style.display="none";
+}
+</script>
+<script src="https://rawcdn.githack.com/kousik19/foto.js/d604b02c69b6f037875bc4a3050b85d776dc4659/foto.js"></script>
