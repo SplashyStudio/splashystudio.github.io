@@ -245,3 +245,10 @@ main > h1:nth-of-type(1), .intro-heading {
  margin-top: -25px;
  height: 60px;
 }
+#previousSites {
+ background: linear-gradient(#0080ff, #0050ff);
+ color: white;
+ text-align: center;
+ margin-top: -25px;
+ height: 60px;
+}
