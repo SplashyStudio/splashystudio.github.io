@@ -41,66 +41,67 @@
 <link rel="canonical" href="https://splashystudio.github.io/online">
 <link rel="author" content="MWB">
 <title>Online | Splashy Studio&trade; | MWB</title>
+<noscript>You literally don't have JavaScript turned on! Please go to your browser settings, so you can be able to use this!</noscript>
 <h3>Editing Modes</h3>
-<button id="mode1" onclick="showCustomImageMode()" title="Make your own drawn image">Create Image</button><br><br>
-<button id="mode2" onclick="showEditImageMode()" title="Edit pictures on your computer">Edit Image</button><br><br>
+<button id="mode1" onclick="showCustomImageMode()" title="Make your own drawn image">Create Image<noscript>&nbsp;(requires scripts)</noscript></button><br><br>
+<button id="mode2" onclick="showEditImageMode()" title="Edit pictures on your computer">Edit Image<noscript>&nbsp;(requires scripts)</noscript></button><br><br>
 <div id="customImageMode">
      <h3>Format</h3>
      <div id="favoritesContainer">
-          <label for="favoriteColor">Color</label>
+          <label for="favoriteColor">Color<noscript>&nbsp;(requires scripts)</noscript></label>
           <input type="color" style="cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer" name="favcolor" id="favcolor" value="#ff0000" onchange="favoriteColor(this)">
      </div><br>
      <div id="penSize" class="penSize">
-          <label for="penSize">Size</label>
+          <label for="penSize">Size<noscript>&nbsp;(requires scripts)</noscript></label>
           <input type="range" name="penSize" style="cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer" id="penSlider" value="10" step="1" min="1" max="100" onchange="penSizeChange(this.value)">
      </div><br>
      <h3>File Actions</h3>
-     <a onclick="foto.export()" id="saveAndDownload" title="Save to your computer">&nbsp;Download&nbsp;</a>
-     <a onclick="wipeEverything()" id="clearCanvas" title="Erase everything">&nbsp;Wipe&nbsp;</a><br><br>
+     <a onclick="foto.export()" id="saveAndDownload" title="Save to your computer">&nbsp;Download&nbsp;<noscript>(requires scripts)</noscript></a>
+     <a onclick="wipeEverything()" id="clearCanvas" title="Erase everything">&nbsp;Wipe&nbsp;<noscript>(requires scripts)</noscript></a><br><br>
      <div class="board">
-          <canvas id="paintingCanvas" width="500" height="500" style="background:white;cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer"></canvas>
+          <canvas id="paintingCanvas" width="500" height="500" style="background:white;cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer"><noscript>Unable to draw and change zoom size (because this requires scripts)</noscript></canvas>
      </div><br>
      <h3>Size</h3>
-     <a id="zoomIn" onclick="zoomCanvasIn()" title="Increase canvas size">&nbsp;+&nbsp;</a>
-     <a id="zoomNormally" onclick="zoomCanvasNormally()" title="Normalize canvas size">&nbsp;=&nbsp;</a>
-     <a id="zoomOut" onclick="zoomCanvasOut()" title="Decrease canvas size">&nbsp;-&nbsp;</a>
+     <a id="zoomIn" onclick="zoomCanvasIn()" title="Increase canvas size">&nbsp;+&nbsp;<noscript>(requires scripts)</noscript></a>
+     <a id="zoomNormally" onclick="zoomCanvasNormally()" title="Normalize canvas size">&nbsp;=&nbsp;<noscript>(requires scripts)</noscript></a>
+     <a id="zoomOut" onclick="zoomCanvasOut()" title="Decrease canvas size">&nbsp;-&nbsp;<noscript>(requires scripts)</noscript></a>
 </div>
 <div id="editingImageMode" style="display:none">
      <h3>File Actions</h3>
-     <a onclick="foto.export()" id="editSaveAndDownload" title="Save to your computer">&nbsp;Download&nbsp;</a>
-     <a onclick="wipeEverything()" id="editClearCanvas" title="Erase everything">&nbsp;Wipe&nbsp;</a>
+     <a onclick="foto.export()" id="editSaveAndDownload" title="Save to your computer">&nbsp;Download&nbsp;<noscript>(requires scripts)</noscript></a>
+     <a onclick="wipeEverything()" id="editClearCanvas" title="Erase everything">&nbsp;Wipe&nbsp;<noscript>(requires scripts)</noscript></a>
      <div class="file-upload-section" onclick="selectImage()">
-          <input id="foto-file" type="file" style="font-family:Century Gothic;font-weight:bold"><p id="selectText" title="Select a picture">Select Picture</p>
+          <input id="foto-file" type="file" style="font-family:Century Gothic;font-weight:bold"><p id="selectText" title="Select a picture">Select Picture<noscript>&nbsp;(requires scripts)</noscript></p>
      </div><br>
      <div class="img-container">
-          <img id="foto-image" class="image" draggable="false">
+          <img id="foto-image" class="image" draggable="false"><noscript>Image(s) unavailable (because this requires scripts)</noscript>
      </div><br>
      <h3>Size</h3>
-     <a id="editZoomIn" onclick="zoomEditCanvasIn()" title="Increase canvas size">&nbsp;+&nbsp;</a>
-     <a id="editZoomNormally" onclick="zoomEditCanvasNormally()" title="Normalize canvas size">&nbsp;=&nbsp;</a>
-     <a id="editZoomOut" onclick="zoomEditCanvasOut()" title="Decrease canvas size">&nbsp;-&nbsp;</a><br><br>
+     <a id="editZoomIn" onclick="zoomEditCanvasIn()" title="Increase canvas size">&nbsp;+&nbsp;<noscript>(requires scripts)</noscript></a>
+     <a id="editZoomNormally" onclick="zoomEditCanvasNormally()" title="Normalize canvas size">&nbsp;=&nbsp;<noscript>(requires scripts)</noscript></a>
+     <a id="editZoomOut" onclick="zoomEditCanvasOut()" title="Decrease canvas size">&nbsp;-&nbsp;<noscript>(requires scripts)</noscript></a><br><br>
      <h3>Filters</h3>
      <div class="buttons-section">
           <table class="buttons-table">
                <tr>
-                    <td><button class="operation-btn" onclick="foto.grayscale()" title="GrayScale">GrayScale</button></td>
-                    <td><button class="operation-btn" onclick="foto.makeBright()" title="Brighter">Brighter</button></td>
-                    <td><button class="operation-btn" onclick="foto.makeDark()" title="Darker">Darker</button></td>
+                    <td><button class="operation-btn" onclick="foto.grayscale()" title="GrayScale">GrayScale<noscript>(requires scripts)</noscript></button></td>
+                    <td><button class="operation-btn" onclick="foto.makeBright()" title="Brighter">Brighter<noscript>(requires scripts)</noscript></button></td>
+                    <td><button class="operation-btn" onclick="foto.makeDark()" title="Darker">Darker<noscript>(requires scripts)</noscript></button></td>
                </tr>
                <tr>
-                    <td><button class="operation-btn" onclick="foto.applyBlurFilter()" title="Blur">Blur</button></td>
-                    <td><button class="operation-btn" onclick="foto.applyEmbossFilter()" title="Emboss">Emboss</button></td>
-                    <td><button class="operation-btn" onclick="foto.applySharpFilter()" title="Sharp">Sharp</button></td>
+                    <td><button class="operation-btn" onclick="foto.applyBlurFilter()" title="Blur">Blur<noscript>(requires scripts)</noscript></button></td>
+                    <td><button class="operation-btn" onclick="foto.applyEmbossFilter()" title="Emboss">Emboss<noscript>(requires scripts)</noscript></button></td>
+                    <td><button class="operation-btn" onclick="foto.applySharpFilter()" title="Sharp">Sharp<noscript>(requires scripts)</noscript></button></td>
                </tr>
                <tr>
-                    <td><button class="operation-btn" onclick="foto.makeTransparent()" title="Transparent">Transparent</button></td>
-                    <td><button class="operation-btn" onclick="foto.applyVintageFilter()" title="Vintage">Vintage</button></td>
+                    <td><button class="operation-btn" onclick="foto.makeTransparent()" title="Transparent">Transparent<noscript>(requires scripts)</noscript></button></td>
+                    <td><button class="operation-btn" onclick="foto.applyVintageFilter()" title="Vintage">Vintage<noscript>(requires scripts)</noscript></button></td>
                </tr>
           </table>
      </div>
 </div><hr style="visibility:hidden">
 <div class="cursor"></div>
-<div id="consent-popup"><b><a class="canUnderlineOnHover link" onclick="hideConsent()">&times;</a> Please report any <a href="https://github.com/SplashyStudio/splashystudio.github.io/issues" class="canUnderlineOnHover link">issues or suggestions</a> here.</b></div>
+<div id="consent-popup"><b><a class="canUnderlineOnHover link" onclick="hideConsent()">&times;</a> Please report any <a href="https://github.com/SplashyStudio/splashystudio.github.io/issues" class="canUnderlineOnHover link">issues or suggestions</a> here.</b><noscript>&nbsp;You cannot close this since your have JS turned off!</noscript></div>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 .canUnderlineOnHover {
