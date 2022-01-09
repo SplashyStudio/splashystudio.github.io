@@ -252,9 +252,9 @@ main > h1:nth-of-type(1), .intro-heading {
  margin-top: -25px;
  height: 60px;
 }
-#left {
+.left {
  margin-left: -50px;
 }
-#right {
+.right {
  margin-left: 50px;
 }
