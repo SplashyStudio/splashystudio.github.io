@@ -87,7 +87,7 @@
      <h3>Format</h3>
      <div id="favoritesContainer">
           <label for="favoriteColor">Color<noscript><b>&nbsp;(requires scripts)</b></noscript></label>
-          <input type="color" style="cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer" name="favcolor" id="favcolor" value="#ff0000" onchange="favoriteColor(this)">
+          <input type="color" style="cursor:url('https://github.com/SplashyStudio/Splashy-Studio-5/blob/main/ss5CursorPointer.cur?raw=true'),pointer" name="favcolor" id="favcolor" value="#0000ff" onchange="favoriteColor(this)">
      </div><br>
      <div id="penSize" class="penSize">
           <label for="penSize">Size<noscript><b>&nbsp;(requires scripts)</b></noscript></label>
@@ -408,7 +408,7 @@ canvas.addEventListener("mousedown", (e) => {
      x=e.offsetX;
      y=e.offsetY;
 });
-c.fillStyle="#ff0000";
+c.fillStyle="#0000ff";
 c.strokeStyle=c.fillStyle;
 document.getElementById("favcolor").title = document.getElementById("favcolor").value;
 function draw(x2,y2) {
